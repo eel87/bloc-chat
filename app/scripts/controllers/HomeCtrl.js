@@ -1,6 +1,6 @@
 (function() {
   function HomeCtrl(Room) {
-    this.rooms = Room;
+    this.chatrooms = Room.all;
   }
 
   angular
