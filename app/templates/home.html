@@ -5,9 +5,7 @@
 <section class="nav-column">
   <h2 class="username">User Name</h2>
   <h3 class="room-list-title">Chat Rooms</h3>
-  <h2 class="rooms-list">
-    <ul>Room 1</ul>
-    <ul>Room 2</ul>
-    <ul>Room 3</ul>
-  </h2>
+  <ul class="rooms-list">
+    <li ng-repeat="rooms in home.rooms">{{ home.rooms }}</li>
+  </ul>
   <h3 class="create-room">Create Room</h3>
