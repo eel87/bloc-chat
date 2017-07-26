@@ -6,6 +6,11 @@
 
     Room.all = rooms;
 
+    Room.add = function(room) {
+      room.customRoom.push(room.newRoom);
+      room.newRoom = {};
+    }
+
     return Room;
   }
 

@@ -5,5 +5,16 @@
 <section class="nav-column">
   <ul ng-repeat="room in home.chatrooms">
     <li class="room">{{room.$value}}</li>
-  </div>
+    <li ng-repeat="customRoom in room.customRoom"> {{ newRoom }}</li>
+  </ul>
+
+  <form ng-submit="Room.add()">
+    <input type="text" ng-model="newRoom">
+    <br>
+    <button type="submit">Add Chat Room</button>
+  </form>
+
+  <ul ng-repeat="customRoom in room.customRoom">
+    <li class = "room">{{ newRoom }}</li>
+  </ul>
 </section>
