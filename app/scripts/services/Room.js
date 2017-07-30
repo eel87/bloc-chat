@@ -6,9 +6,8 @@
 
     Room.all = rooms;
 
-    Room.add = function(room) {
-      room.customRoom.push(room.newRoom);
-      room.newRoom = {};
+    Room.add = function(roomName) {
+      rooms.$add({ name: roomName });
     }
 
     return Room;

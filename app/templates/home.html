@@ -1,20 +1,23 @@
 <section class="title-bar">
-  <h1 class="title">Bloc Chat</h1>
+  <h1 class="title">Bloc Chat!</h1>
 </section>
 
 <section class="nav-column">
   <ul ng-repeat="room in home.chatrooms">
-    <li class="room">{{room.$value}}</li>
-    <li ng-repeat="customRoom in room.customRoom"> {{ newRoom }}</li>
+    <li class="room">{{room.$value}} {{room.name}}</li>
   </ul>
 
-  <form ng-submit="Room.add()">
-    <input type="text" ng-model="newRoom">
+  <div ng-controller="ModalCtrl as modal">
+        <ul ng-repeat="name in modal.add">
+          <li class="room">{{modal.name}}></li>
+        </ul>
+  </div>
+
+
+
+
+  <!-- <form class="form">
+    <input class="input" type="text" ng-model="newRoom">
     <br>
-    <button type="submit">Add Chat Room</button>
-  </form>
-
-  <ul ng-repeat="customRoom in room.customRoom">
-    <li class = "room">{{ newRoom }}</li>
-  </ul>
-</section>
+    <button class="button" type="submit" ng-click="home.addRoom(newRoom)">Add Chat Room</button>
+  </form> -->
