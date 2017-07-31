@@ -1,41 +1,56 @@
-/*html {
+html {
   height: 100%;
   font-size: 100%;
 }
 
 body {
-  background-color: rgba(46, 45, 61, 0.5);
-}
-
-.title-bar {
-  box-sizing: border-box;
-  position: relative;
-  border-style: solid;
-  border-color: rgb(0, 0, 0);
-  background-color: rgba(255,255,255,.4);
-}
-
-.title-bar .title {
-  font-family: 'Holtwood One SC', serif;
-  text-align: center;
-  font-size: 50px;
-  margin: auto;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Zilla Slab', serif;
 }
 
 .nav-column {
   box-sizing: border-box;
-  border-style: solid;
-  position: absolute;
+  border-right-style: double;
+  border-color: rgb(0, 0, 0);
+}
+
+.nav-column .title {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 600;
+  text-align: left;
+  font-size: 45px;
+  margin: auto;
+}
+
+.nav-column .room-list {
+  text-align: left;
+}
+
+.modal-header .modal-title {
+  font-family: 'Zilla Slab', serif;
+  font-size: 30px;
+}
+
+.chatroom-name {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: light;
+  margin-right: 5px;
+}
+
+.btn {
+  font-family: 'Lato', sans-serif;
+}
+
+.btn.btn-info {
   margin-top: 10px;
-  margin-right: 0;
-  padding-bottom: 350px;
-  background-color: rgba(255,255,255,.4);
+  font-size: 17px;
 }
 
-.nav-column .form {
-  padding: 3px 3px 3px 3px;
+.btn.btn-danger {
+  font-size: 18px;
 }
 
-.nav-column .form .button {
-  margin-top: 3px;
-}*/
+.btn.btn-success {
+  font-size: 18px;
+}

@@ -3,9 +3,14 @@
 </div>
 
 <div class="modal-body">
-
-</div>
-
-<div class="modal-footer">
-  <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+  <form ng-submit="modal.createRoom(roomName)">
+    <div class="form-group">
+      <label class="chatroom-name">Chat Room Name:</label>
+      <input type="text" ng-model="roomName">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="modal.cancel()">Cancel</button>
+      <input type="submit" class="btn btn-success success" value='Submit'>
+    </div>
+  </form>
 </div>

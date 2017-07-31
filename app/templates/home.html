@@ -1,11 +1,8 @@
-<section class="title-bar">
-  <h1 class="title">Bloc Chat!</h1>
-</section>
-
 <section class="nav-column">
-  <ul ng-repeat="room in home.chatrooms">
+  <h1 class="title">Bloc Chat!</h1>
+  <ul class="room-list" ng-repeat="room in home.chatrooms">
     <li class="room">{{room.$value}} {{room.name}}</li>
   </ul>
 </section>
 
-<button type="button" class="btn btn-info" ng-click="modal.openAddRoomModal">Add Chat Room</button>
+<button type="button" class="btn btn-info" ng-click="home.openAddRoomModal()">Add Chat Room</button>

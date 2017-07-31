@@ -1,16 +1,15 @@
 (function() {
-  function ModalCtrl($uibModalInstance, $uibModal) {
-    //Open modal window button
-    this.openAddRoomModal = function() {
-      $uibModal.open();
-    };
+  function ModalCtrl($uibModal, $uibModalInstance, Room) {
     // Close modal window button
     this.cancel = function () {
       $uibModalInstance.close();
-    };
+    }
+    this.createRoom = function (roomName) {
+      Room.add(roomName);
+    }
   }
 
   angular
     .module('blocChat')
-    .controller('ModalCtrl', ['Room', ModalCtrl]);
+    .controller('ModalCtrl', ['$uibModal', '$uibModalInstance', 'Room', ModalCtrl]);
 })();
