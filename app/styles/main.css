@@ -19,23 +19,39 @@ body {
   font-weight: 600;
   text-align: left;
   font-size: 45px;
-  margin: auto;
+  margin-left: 10px;
 }
 
 .nav-column .room-list {
   text-align: left;
 }
 
+.room-list {
+  list-style-type: disc;
+}
+
+.room {
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: 'Arimo', sans-serif;
+}
+
+.input-box {
+  margin-left: 6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .modal-header .modal-title {
   font-family: 'Zilla Slab', serif;
   font-size: 30px;
+  font-weight: bold;
 }
 
 .chatroom-name {
   font-family: 'Lato', sans-serif;
   font-size: 25px;
-  font-weight: light;
-  margin-right: 5px;
+  font-weight: bold;
 }
 
 .btn {
@@ -43,8 +59,9 @@ body {
 }
 
 .btn.btn-info {
+  margin-left: 10px;
   margin-top: 10px;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .btn.btn-danger {

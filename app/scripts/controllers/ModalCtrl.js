@@ -6,6 +6,7 @@
     }
     this.createRoom = function (roomName) {
       Room.add(roomName);
+      $uibModalInstance.close();
     }
   }
 

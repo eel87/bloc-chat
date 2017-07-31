@@ -6,11 +6,11 @@
   <form ng-submit="modal.createRoom(roomName)">
     <div class="form-group">
       <label class="chatroom-name">Chat Room Name:</label>
-      <input type="text" ng-model="roomName">
+      <input class="input-box" type="text" ng-model="roomName">
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="modal.cancel()">Cancel</button>
-      <input type="submit" class="btn btn-success success" value='Submit'>
+      <button type="submit" class="btn btn-success success" data-dismiss="modal" ng-click="modal.close()">Submit</button>
     </div>
   </form>
 </div>
