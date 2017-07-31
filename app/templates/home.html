@@ -6,18 +6,6 @@
   <ul ng-repeat="room in home.chatrooms">
     <li class="room">{{room.$value}} {{room.name}}</li>
   </ul>
+</section>
 
-  <div ng-controller="ModalCtrl as modal">
-        <ul ng-repeat="name in modal.add">
-          <li class="room">{{modal.name}}></li>
-        </ul>
-  </div>
-
-
-
-
-  <!-- <form class="form">
-    <input class="input" type="text" ng-model="newRoom">
-    <br>
-    <button class="button" type="submit" ng-click="home.addRoom(newRoom)">Add Chat Room</button>
-  </form> -->
+<button type="button" class="btn btn-info" ng-click="modal.openAddRoomModal">Add Chat Room</button>

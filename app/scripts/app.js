@@ -14,13 +14,13 @@
       })
 
       .state('modal', {
-        url: '/modal',
         controller: 'ModalCtrl as modal',
-        templateUrl: '/templates/home.html'
+        size: 'md',
+        templateUrl: '/templates/modal.html'
       });
   }
 
   angular
-  .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap'])
+  .module('blocChat', ['ui.router', 'firebase'])
   .config(config)
 })();
