@@ -2,72 +2,66 @@ html {
   height: 100%;
   font-size: 100%;
 }
-
 body {
   background-color: rgb(255, 255, 255);
   font-family: 'Zilla Slab', serif;
 }
-
-.nav-column {
-  box-sizing: border-box;
-  border-right-style: double;
-  border-color: rgb(0, 0, 0);
+* {
+    box-sizing: border-box;
 }
-
-.nav-column .title {
+.header {
   font-family: 'Zilla Slab', serif;
   font-weight: 600;
   text-align: left;
-  font-size: 45px;
-  margin-left: 10px;
+  font-size: 40px;
+  margin: 0 10px 0 10px;
+  border-bottom-style: double;
+  border-bottom-color: rgba(45, 45, 45, 1);
 }
-
-.nav-column .room-list {
-  text-align: left;
+.column {
+  float: left;
+  padding-top: 10px;
 }
-
+.column .chatroom-info{
+  width: 25%;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .room-list {
-  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 10px;
 }
-
 .room {
-  margin-top: 10px;
-  font-size: 25px;
+  padding: 5px 50px 5px 5px;
+  list-style-type: none;
+  font-size: 13px;
   font-family: 'Arimo', sans-serif;
+  background-color: rgba(0, 138, 255, .3);
+  color: rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  width: 140px;
 }
-
-.input-box {
-  margin-left: 6px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+.room:hover {
+  background-color: rgba(0, 138, 255, .7);
 }
-
-.modal-header .modal-title {
-  font-family: 'Zilla Slab', serif;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.chatroom-name {
-  font-family: 'Lato', sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-}
-
 .btn {
   font-family: 'Lato', sans-serif;
 }
-
 .btn.btn-info {
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 20px;
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  font-size: 13px;
+  font-weight: bolder;
+  color: black;
+  background-color: rgba(189, 189, 189, 0.5);
+  border-color: rgba(189, 189, 189, 0.5);
 }
-
-.btn.btn-danger {
-  font-size: 18px;
-}
-
-.btn.btn-success {
-  font-size: 18px;
+.btn.btn-info:hover {
+  background-color: rgba(189, 189, 189, 1);
+  border-color: rgba(189, 189, 189, 1);
+  color: black;
 }

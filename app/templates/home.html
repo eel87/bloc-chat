@@ -1,8 +1,23 @@
-<section class="nav-column">
-  <h1 class="title">Bloc Chat!</h1>
-  <ul class="room-list" ng-repeat="room in home.chatrooms">
-    <li class="room">{{room.$value}} {{room.name}}</li>
-  </ul>
+<h1 class="header">Bloc Chat!</h1>
+
+<section class="main-content">
+  <div class="clearfix">
+    <div class="column chatroom-info">
+      <ul class="room-list" ng-repeat="room in home.chatrooms">
+        <li class="room">{{room.$value}} {{room.name}}</li>
+      </ul>
+    </div>
+    <div class="column messages">
+        <h3 class="chatroom-name">Dr Seuss Chat</h3>
+      <div class="messenger-one">
+        <div class="name">Erin Leck</div>
+        <div class="message">Hello! I'm Erin.</div>
+      </div>
+      <div class="messenger-two">
+        <div class="name">Dr Seuss</div>
+        <div class="message">Hello! I'm the Lorax.</div>
+      </div>
+  </div>
 </section>
 
 <button type="button" class="btn btn-info" ng-click="home.openAddRoomModal()">Add Chat Room</button>
