@@ -1,8 +1,8 @@
 (function() {
   function HomeCtrl($uibModal, $scope, Room) {
-    console.log("in hm ctrl")
-    $scope.activeRoom = function(roomName) {
-      return roomName;
+    this.setActiveRoom = function(room) {
+      $scope.activeRoom = room;
+      console.log("Room is now set to: " + room)
     }
     this.chatrooms = Room.all;
     //Open modal window button
@@ -16,5 +16,5 @@
   }
   angular
     .module('blocChat')
-    .controller('HomeCtrl', ['$uibModal', 'Room', HomeCtrl]);
+    .controller('HomeCtrl', ['$uibModal', '$scope', 'Room', HomeCtrl]);
 })();
