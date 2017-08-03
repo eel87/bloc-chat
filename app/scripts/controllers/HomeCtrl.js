@@ -1,5 +1,5 @@
 (function() {
-  function HomeCtrl($uibModal, Room, $scope) {
+  function HomeCtrl($uibModal, $scope, Room) {
     console.log("in hm ctrl")
     $scope.activeRoom = function(roomName) {
       return roomName;

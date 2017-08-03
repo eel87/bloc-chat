@@ -4,11 +4,11 @@
   <div class="clearfix">
     <div class="column chatroom-info">
       <ul class="room-list" ng-repeat="room in home.chatrooms">
-        <li class="room" ng-click="scope function to get and hold room.name that is clicked">{{room.name}}</li>
+        <li class="room" ng-click="$scope.activeRoom(roomName)">{{room.name}}</li>
       </ul>
     </div>
     <div class="column messages">
-        <h3 class="chatroom-name" ng-bind="scope's roomName">$scope's roomName</h3>
+        <h3 class="chatroom-name" ng-bind="roomName">{{roomName}}</h3>
       <div class="messenger-one">
         <div class="name">Erin Leck</div>
         <div class="message">Hello! I'm Erin.</div>
