@@ -4,17 +4,17 @@
   <div class="clearfix">
     <div class="column chatroom-info">
       <ul class="room-list" ng-repeat="room in home.chatrooms">
-        <li class="room" ng-click="home.setActiveRoom(room)">{{room.name}}</li>
+        <li class="room" ng-click="home.setActiveRoom(room); home.currentMessages(roomId)">{{room.name}}</li>
       </ul>
     </div>
     <div class="column messages">
         <h3 class="chatroom-name" ng-bind="activeRoom.name"></h3>
       <div class="messenger-one">
-        <div class="name">Erin Leck</div>
-        <div class="message">Hello! I'm Erin.</div>
+        <div class="name" ng-bind="home.currentMessages.name"></div>
+        <div class="message" ng-bind="home.currentMessages.content"></div>
       </div>
       <div class="messenger-two">
-        <div class="name">Dr Seuss</div>
+        <div class="name"></div>
         <div class="message">Hello! I'm the Lorax.</div>
       </div>
   </div>

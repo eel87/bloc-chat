@@ -1,5 +1,5 @@
 (function() {
-  function HomeCtrl($uibModal, $scope, Room) {
+  function HomeCtrl($uibModal, $scope, Room, Message) {
     this.setActiveRoom = function(room) {
       $scope.activeRoom = room;
       console.log("Room is now set to: " + room)
@@ -13,8 +13,11 @@
         templateUrl: '/templates/modal.html'
       });
     }
+    this.currentMessages = function(roomId) {
+      Message.getRoomById(roomId);
+    }
   }
   angular
     .module('blocChat')
-    .controller('HomeCtrl', ['$uibModal', '$scope', 'Room', HomeCtrl]);
+    .controller('HomeCtrl', ['$uibModal', '$scope', 'Room', 'Message', HomeCtrl]);
 })();
