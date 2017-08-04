@@ -5,12 +5,13 @@
     var messages = $firebaseArray(ref);
 
     Message.getRoomById = function(roomId) {
-      console.log("in message service")
-      debugger;
-      return messages.orderByChild('roomId').equalTo(roomId);
-      debugger;
+      messages.orderByChild('roomId').equalTo(roomId);
     }
 
+    Message.content =  function(content) {
+      messages.orderByChild('content').equalTo(content);
+    }
+    
     return Message;
   };
 

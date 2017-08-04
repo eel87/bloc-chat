@@ -1,6 +1,7 @@
 (function() {
   function HomeCtrl($uibModal, $scope, Room, Message) {
     this.setActiveRoom = function(room) {
+      console.log(JSON.stringify(room));
       $scope.activeRoom = room;
       console.log("Room is now set to: " + room)
     }
