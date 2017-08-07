@@ -4,7 +4,7 @@
     this.cancel = function () {
       $uibModalInstance.close();
     }
-    this.createRoom = function (roomName) {
+    this.createRoom = function(roomName) {
       Room.add(roomName);
       $uibModalInstance.close();
     }
