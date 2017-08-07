@@ -10,8 +10,8 @@
     <div class="column messages">
         <h3 class="chatroom-name" ng-bind="activeRoom.name"></h3>
       <div class="messenger-one">
-        <div class="name">{{home.currentMessages.roomId}}</div>
-        <div class="message" ng-bind="room.content"></div>
+        <div class="name" ng-repeat="message in home.messages">{{message.username}}</div>
+        <div class="message" ng-repeat="message in home.messages">{{message.content}}</div>
       </div>
       <div class="messenger-two">
         <div class="name"></div>

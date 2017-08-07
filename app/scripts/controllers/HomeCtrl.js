@@ -12,10 +12,13 @@
         templateUrl: '/templates/modal.html'
       });
     }
+
     this.currentMessages = function(roomId) {
-      Message.getRoomById(roomId);
+      this.messages = Message.getRoomById(roomId);
+      return this.messages;
     }
   }
+
   angular
     .module('blocChat')
     .controller('HomeCtrl', ['$uibModal', '$scope', 'Room', 'Message', HomeCtrl]);
