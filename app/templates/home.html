@@ -8,14 +8,10 @@
       </ul>
     </div>
     <div class="column messages">
-        <h3 class="chatroom-name" ng-bind="activeRoom.name"></h3>
-      <div class="messenger-one">
-        <div class="name" ng-repeat="message in home.messages">{{message.username}}</div>
-        <div class="message" ng-repeat="message in home.messages">{{message.content}}</div>
-      </div>
-      <div class="messenger-two">
-        <div class="name"></div>
-        <div class="message">Hello! I'm the Lorax.</div>
+      <h3 class="chatroom-name" ng-bind="activeRoom.name"></h3>
+      <div class="messages-list" ng-repeat="message in home.messages">
+        <div class="name">{{message.username}}</div>
+        <div class="message">{{message.content}}</div>
       </div>
   </div>
 </section>

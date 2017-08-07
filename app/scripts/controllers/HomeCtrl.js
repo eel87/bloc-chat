@@ -15,6 +15,7 @@
 
     this.currentMessages = function(roomId) {
       this.messages = Message.getRoomById(roomId);
+      console.log(this.messages);
       return this.messages;
     }
   }
