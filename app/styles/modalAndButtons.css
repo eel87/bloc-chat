@@ -10,16 +10,23 @@
   margin-bottom: 5px;
 }
 
-.chatroom-name {
+.form-group .chatroom-name {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
 
 .btn.btn-danger {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .btn.btn-success {
-  font-size: 13px;
+  font-size: 15px;
+}
+
+.username-modal-header .username-modal-title {
+  font-family: 'Zilla Slab', serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 5px;
 }

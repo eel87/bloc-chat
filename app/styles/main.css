@@ -47,13 +47,15 @@ body {
 .room:hover {
   background-color: rgba(0, 138, 255, .7);
 }
+
+}
 .btn {
   font-family: 'Lato', sans-serif;
 }
 .btn.btn-info {
   position: fixed;
   bottom: 10px;
-  left: 20px;
+  left: 15px;
   font-size: 13px;
   font-weight: bolder;
   color: black;
