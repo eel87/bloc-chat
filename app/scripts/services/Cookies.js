@@ -5,7 +5,9 @@
       $uibModal.open({
         controller: 'ModalCtrl as modal',
         size: 'sm',
-        templateUrl: '/templates/username-modal.html'
+        templateUrl: '/templates/username-modal.html',
+        backdrop: 'static',
+        keyboard: false
       })
     }
   }
@@ -14,7 +16,3 @@
     .module('blocChat')
     .run(['$cookies', '$uibModal', BlocChatCookies]);
 })();
-
-
-//var user = prompt("what you wanna be called yo?")
-//$cookies.put('blocChatCurrentUser', user)

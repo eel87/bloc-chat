@@ -16,5 +16,5 @@
 
   angular
     .module('blocChat')
-    .controller('ModalCtrl', ['$uibModal', '$uibModalInstance', 'Room', '$cookies', ModalCtrl]);
+    .controller('ModalCtrl', ['$uibModal', '$uibModalInstance', '$cookies', 'Room', ModalCtrl]);
 })();
