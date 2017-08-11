@@ -4,7 +4,7 @@
   <div class="clearfix">
     <div class="column chatroom-info">
       <ul class="room-list" ng-repeat="room in home.chatrooms">
-        <li class="room" ng-click="home.setActiveRoom(room); home.currentMessages(room.$id)"; >{{room.name}}</li>
+        <li class="room" ng-click="home.setActiveRoom(room); home.currentMessages(room.$id)">{{room.name}}</li>
       </ul>
     </div>
     <div class="column messages">
@@ -14,9 +14,9 @@
         <div class="message">{{message.content}}</div>
       </div>
       <div class ="message">
-        <form ng-submit="home.sendMessage(newMessage)">
+        <form ng-submit="home.sendMessage(newMessage, home.roomId)">
           <div class="form-body">
-            <textarea class="new-message" name="message" rows="2" cols="110" placeholder="..." ng-model="newMessage"></textarea>
+            <input class="new-message" type="text" height="50" size="100" placeholder="..." ng-model="newMessage"></text>
           </div>
           <div class="form-footer">
             <button type="submit" class="btn send-message">Send Message</button>

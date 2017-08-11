@@ -15,11 +15,12 @@
 
     this.currentMessages = function(roomId) {
       this.messages = Message.getRoomById(roomId);
+      this.roomId = roomId;
       return this.messages;
     }
 
-    this.sendMessage = function(newMessage) {
-      return Message.send(newMessage);
+    this.sendMessage = function(newMessage, roomId) {
+      return Message.send(newMessage, roomId);
     }
   }
 

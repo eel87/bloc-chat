@@ -8,9 +8,10 @@
       return roomMessages;
     }
 
-    Message.send = function(newMessage, currentUser) {
+    Message.send = function(newMessage, roomId, currentUser) {
       var currentUser = $cookies.get('blocChatCurrentUser');
       $firebaseArray(ref).$add ({
+        roomId: roomId,
         username: currentUser,
         content: newMessage,
       });
